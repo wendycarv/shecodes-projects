@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #1a64d6;
+        font-family: Helvetica;
+        font-size: 34px;
+        margin: 0px;
+        line-height: 48px;
+      }
+      h2 {
+        color: black;
+        text-align: center;
+        font-family: Helvetica;
+        font-size: 34px;
+        font-weight: lighter;
+        margin: 0;
+        line-height: 48px;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        display: block;
+        width: 400px;
+        padding: 25px 10px 15px;
+        margin: 0 auto 0px;
+        border: none;
+        border-radius: 12px;
+        text-align: center;
+        font-family: Helvetica;
+        font-size: 19px;
+        font-weight: bold;
+        transition: all 200ms ease-in-out;
+      }
+      .temperature {
+        font-family: monospace;
+        font-weight: lighter;
+        letter-spacing: 0;
+        line-height: 55px;
+        color: #4d4c48;
+      }
+      .hotter {
+        font-weight: bolder;
+      }
+      li:hover {
+        background-color: #fffbef;
+      }
+      button {
+        display: block;
+        padding: 20px 25px;
+        margin: 0 auto 20px auto;
+        border: none;
+        border-radius: 50px;
+        background-color: #1a64d6;
+        color: white;
+        box-shadow: rgba(37, 39, 39, 0.08) 0 8px 8px 0;
+        text-align: center;
+        font-family: Helvetica;
+        font-size: 16px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: transparent;
+        color: #1a64d6;
+        border: 1px solid #1a64d6;
+        font-family: Helvetica;
+      }
+      footer {
+        text-align: center;
+        font-size: 18px;
+        font-family: monospace;
+        color: #4d4c48;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      🌤
+      <br />
+      Currently 21° in Tokyo
+      <h2>
+        13° /
+        <strong>23°</strong>
+      </h2>
+    </h1>
+    <ul>
+      <li class="day">
+        🌧Tomorrow
+        <div class="temperature">
+          10° /
+          <span class="hotter">22°</span>
+        </div>
+      </li>
+      <li class="day">
+        ⛅️Saturday
+        <div class="temperature">
+          15° /
+          <span class="hotter">17°</span>
+        </div>
+      </li>
+      <li class="day">
+        ☀️Sunday
+        <div class="temperature">
+          25° /
+          <span class="hotter">28°</span>
+        </div>
+      </li>
+    </ul>
+    <button class="city">Change city</button>
+    <footer>Coded by Wendy Lima</footer>
+  </body>
+</html>

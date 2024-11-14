@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>a wonder</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(2, 1, 41, 1) 0%,
+        rgba(0, 0, 0, 1) 48%
+      );
+    }
+    .container {
+      max-width: 70%;
+      padding: 30px;
+      margin: 0 auto;
+      align-items: center;
+      color: white;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h1 {
+      text-align: center;
+      margin: 100px auto 2000px;
+    }
+    h2 {
+      text-align: center;
+      font-size: 30px;
+      background-color: transparent;
+      border-radius: 10px;
+      border: 3px solid #020129;
+      padding: 20px;
+    }
+    h3 {
+      text-align: center;
+      font-size: 17.5px;
+      color: rgb(245, 177, 51);
+    }
+    em {
+      display: block;
+      padding: 0px 0px 30px;
+      text-align: center;
+      font-size: 14px;
+    }
+    .bad-things {
+      color: rgb(254, 190, 71);
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+    .learn-more {
+      display: block;
+      padding: 0px 0px 30px;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      transition: 200ms ease-in-out;
+    }
+    .learn-more:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    p {
+      padding: 10px 0 10px;
+      line-height: 1.5;
+      text-align: center;
+      font-size: 20px;
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+      padding: 25px 30px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 18px;
+      font-weight: 900;
+      border: none;
+      border-radius: 10px;
+      background-color: #020129;
+      color: white;
+      transition: 200ms ease-in-out;
+    }
+    button:hover {
+      background-color: #090650;
+      color: white;
+      cursor: pointer;
+      box-shadow: 1px 3px 5px rgba(245, 177, 51, 0.3);
+    }
+    footer {
+      font-family: "Courier New", Courier, monospace;
+      margin: 30px;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>can you feel it?</h1>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/030/559/original/open.gif?1648693458"
+        alt="The world spins."
+      />
+      <div class="text">
+        <h2>it's the world. still spinning. for now. hurray.</h2>
+        <em>oh, Mother Earth thank you for not failing us yet!</em>
+        <hr />
+        <p>
+          while down here we do as we please,the world goes on turning and
+          turning up in space! isn't that lovely? she keeps going!
+          <strong
+            >but we have to take care of her so that we can all keep going
+            too!</strong
+          >
+          <br />
+          <span class="bad-things">climate change</span>,
+          <span class="bad-things">biodiversity loss</span>, and
+          <span class="bad-things">overpopulation</span> are bearing down on
+          Earth. we need to do better.
+        </p>
+        <a
+          href="https://en.wikipedia.org/wiki/Earth"
+          target="_blank"
+          class="learn-more"
+        >
+          learn more about our wonderful planet</a
+        >
+        <br />
+        <button>a ticket to enlightenment</button>
+        <footer>designed by w.lima</footer>
+      </div>
+    </div>
+    <script>
+      function userTicket() {
+        let name = prompt("What's your name?");
+        let savePlanet = prompt(
+          "Would you like to learn more about what you can do to help the planet?"
+        );
+
+        if (
+          savePlanet === "yes" ||
+          savePlanet === "Yes" ||
+          savePlanet === "YES"
+        ) {
+          let email = prompt("What's your email?");
+          alert(
+            "Thanks for doing your part, " + name + "!" + " We'll be in touch!"
+          );
+        } else {
+          alert(
+            "Pity, " + name + "!" + " Hopefully you'll change your mind soon!"
+          );
+        }
+      }
+      let ticketButton = document.querySelector("button");
+      ticketButton.addEventListener("click", userTicket);
+    </script>
+  </body>
+</html>
